@@ -12,6 +12,7 @@ html {
   --alternative-text-color: #7e8a98;
   --yellow-button: #f2bf4e;
   --border-color: #cfd3d8;
+  --emphasis-text-blue: #19c1ce;
 }
 
 body {
@@ -97,4 +98,35 @@ h4 {
   outline: 2px solid var(--footer-background-color);
 
   margin-left: 1.6rem;
+}
+
+.hero_section {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  padding: 12rem 18rem;
+
+  background: linear-gradient(40deg, #f1f3f5 72%, #fff 40%);
+}
+
+.hero_section-left {
+  max-width: 60rem;
+
+  font-family: "Darker Grotesque";
+}
+
+.hero_section-left span {
+  font-weight: 900;
+  color: var(--emphasis-text-blue);
+}
+
+.hero_section-left h1 {
+  font-size: 5.6rem;
+}
+
+.hero_section-left p {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 2rem;
 }
