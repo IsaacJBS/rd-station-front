@@ -329,4 +329,57 @@ h4 {
   border: 2px solid var(--main-text-color);
 
   padding: 0.8rem 1.6rem;
+
+  gap: 1rem;
+}
+
+.frameworks {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: flex-start;
+}
+
+.frameworks h2 {
+  font-family: "Darker Grotesque";
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+.frameworks p:first-child {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.frameworks button {
+  margin: 0;
+
+  margin-top: 4rem;
+}
+
+.frameworks-right {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 4rem;
+
+  margin-top: 5rem;
+}
+
+.frameworks-right {
+  max-width: 57rem;
+}
+
+.frameworks-right-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.frameworks-right-item img {
+  width: 3rem;
 }
