@@ -11,6 +11,7 @@ html {
   --alternative-color: #07e5eb;
   --alternative-text-color: #7e8a98;
   --yellow-button: #f2bf4e;
+  --border-color: #cfd3d8;
 }
 
 body {
@@ -21,6 +22,27 @@ body {
   margin: 0;
 
   box-sizing: border-box;
+
+  font-size: 1.6rem;
+}
+
+a {
+  all: unset;
+
+  cursor: pointer;
+}
+
+button {
+  all: unset;
+
+  cursor: pointer;
+
+  font-weight: 800;
+  font-size: 1.4rem;
+  line-height: 140%;
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 h1,
@@ -28,4 +50,51 @@ h2,
 h3,
 h4 {
   font-family: "Darker Grotesque", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 2.4rem 10.8rem;
+
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header_logo {
+  width: 17.4rem;
+  height: 3.2rem;
+}
+
+.header_nav {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.header_nav a {
+  margin-left: 6.4rem;
+}
+
+.header_buttons {
+  margin-left: 6rem;
+}
+
+.button-white {
+  padding: 0.8rem 1.6rem;
+
+  outline: 2px solid var(--main-text-color);
+}
+
+.button-blue {
+  padding: 0.8rem 1.6rem;
+
+  background-color: var(--footer-background-color);
+  outline: 2px solid var(--footer-background-color);
+
+  margin-left: 1.6rem;
 }
