@@ -207,3 +207,50 @@ h4 {
   font-weight: 400;
   font-size: 1.6rem;
 }
+
+.features-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+}
+
+.features h2 {
+  max-width: 60rem;
+  font-family: "Darker Grotesque";
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+.features-card {
+  max-width: 39rem;
+  height: 39rem;
+
+  background: var(--background-color);
+
+  box-shadow: 0px 4px 12px rgba(33, 36, 41, 0.14);
+
+  border-radius: 2px;
+
+  padding: 2.4rem;
+}
+
+.features-card h3 {
+  font-family: "Darker Grotesque";
+  font-weight: 900;
+  font-size: 3.2rem;
+}
+
+.features-card p {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.features-card img {
+  width: 5rem;
+  background-color: #f1f3f5;
+
+  background-size: 10rem;
+
+  border-radius: 50%;
+}
