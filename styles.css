@@ -4,7 +4,7 @@ html {
 }
 
 :root {
-  --background-color: #ffffff;
+  --background-color: #fff;
   --alternative-background-color: #0b485b;
   --footer-background-color: #19c1ce;
   --main-text-color: #212429;
@@ -13,6 +13,7 @@ html {
   --yellow-button: #f2bf4e;
   --border-color: #cfd3d8;
   --emphasis-text-blue: #19c1ce;
+  --color-white: #fff;
 }
 
 body {
@@ -129,4 +130,36 @@ h4 {
   font-family: "Nunito Sans";
   font-weight: 400;
   font-size: 2rem;
+}
+
+.hero_footer {
+  padding: 12rem 18rem;
+
+  color: var(--color-white);
+
+  background: linear-gradient(150deg, #f1f3f5 10%, #0b485b 10%);
+}
+
+.hero_footer-left {
+  max-width: 60rem;
+}
+
+.hero_footer-left h2 {
+  font-family: "Darker Grotesque";
+  font-weight: 900;
+  font-size: 3.2rem;
+}
+
+.hero_footer-left p {
+  font-family: "Nunito Sans";
+
+  font-weight: 400;
+}
+
+.hero_footer-left span {
+  font-weight: 700;
+}
+
+.hero_footer-left p:last-child {
+  font-weight: 700;
 }
