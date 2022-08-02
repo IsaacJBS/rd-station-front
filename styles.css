@@ -1,0 +1,24 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background-color: #ffffff;
+  --alternative-background-color: #0b485b;
+  --footer-background-color: #19c1ce;
+  --main-text-color: #212429;
+  --alternative-color: #7c2d26;
+  --alternative-text-color: #7e8a98;
+  --yellow-button: #f2bf4e;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+
+  padding: 0;
+  border: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
