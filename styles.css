@@ -15,6 +15,7 @@ html {
   --emphasis-text-blue: #19c1ce;
   --color-white: #fff;
   --color-grey: #f1f3f5;
+  --border-blue: #78edf2;
 }
 
 body {
@@ -95,7 +96,7 @@ h4 {
   border-bottom: 1px solid var(--border-color);
 }
 
-.header_logo {
+.logo {
   width: 17.4rem;
   height: 3.2rem;
 }
@@ -382,4 +383,30 @@ h4 {
 
 .frameworks-right-item img {
   width: 3rem;
+}
+
+.footer {
+  max-width: 100vw;
+  padding: 4rem 10rem;
+  background-color: var(--alternative-color);
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: 1px solid var(--border-blue);
+
+  margin-bottom: 2.4rem;
+
+  height: 6rem;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bottom a {
+  text-decoration: underline;
 }
