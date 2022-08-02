@@ -14,6 +14,7 @@ html {
   --border-color: #cfd3d8;
   --emphasis-text-blue: #19c1ce;
   --color-white: #fff;
+  --color-grey: #f1f3f5;
 }
 
 body {
@@ -45,6 +46,31 @@ button {
 
   letter-spacing: 0.04em;
   text-transform: uppercase;
+}
+
+.button-yellow {
+  max-width: 25rem;
+  padding: 0.8rem 2.4rem;
+
+  color: var(--main-text-color);
+
+  align-self: center;
+  background-color: var(--yellow-button);
+}
+
+.button-white {
+  padding: 0.8rem 1.6rem;
+
+  outline: 2px solid var(--main-text-color);
+}
+
+.button-blue {
+  padding: 0.8rem 1.6rem;
+
+  background-color: var(--footer-background-color);
+  outline: 2px solid var(--footer-background-color);
+
+  margin-left: 1.6rem;
 }
 
 h1,
@@ -88,21 +114,6 @@ h4 {
 
 .header_buttons {
   margin-left: 6rem;
-}
-
-.button-white {
-  padding: 0.8rem 1.6rem;
-
-  outline: 2px solid var(--main-text-color);
-}
-
-.button-blue {
-  padding: 0.8rem 1.6rem;
-
-  background-color: var(--footer-background-color);
-  outline: 2px solid var(--footer-background-color);
-
-  margin-left: 1.6rem;
 }
 
 .hero_section {
@@ -253,4 +264,69 @@ h4 {
   background-size: 10rem;
 
   border-radius: 50%;
+}
+
+.create-account-items {
+  max-width: 100%;
+
+  color: var(--color-white);
+
+  background-image: url(./assets/images/graphs.png);
+  background-repeat: no-repeat;
+  background-position: 20%;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+  padding: 8rem 20rem;
+}
+
+.create-account-items h2 {
+  font-family: "Darker Grotesque";
+
+  max-width: 60rem;
+  align-self: center;
+
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+.create-account-items p {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 1.6rem;
+
+  margin-top: 2.4rem;
+  margin-bottom: 4rem;
+}
+
+.demonstration {
+  max-width: 90vw;
+
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  padding-top: 0;
+  padding-bottom: 0;
+
+  height: 31rem;
+  background: linear-gradient(90deg, #f1f3f5 88%, #fff 12%);
+}
+
+.demonstration h2 {
+  font-family: "Darker Grotesque";
+  font-weight: 900;
+  font-size: 3.2rem;
+}
+
+.demonstration button {
+  display: flex;
+  align-items: center;
+
+  border: 2px solid var(--main-text-color);
+
+  padding: 0.8rem 1.6rem;
 }
