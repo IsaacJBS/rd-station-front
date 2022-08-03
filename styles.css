@@ -231,6 +231,7 @@ h4 {
 
 .button-password {
   position: relative;
+  width: 2rem;
   background-image: url(./assets/svg/eye.svg);
   background-repeat: no-repeat;
   top: -2.5rem;
@@ -392,7 +393,7 @@ h4 {
   max-width: 60rem;
   max-height: 60rem;
 
-  margin-top: 12rem;
+  margin-top: 17rem;
 }
 
 .results h2 {
@@ -410,7 +411,7 @@ h4 {
 .results-right {
   max-width: 49rem;
 
-  margin-top: 12rem;
+  margin-top: 15rem;
 }
 
 .results-items {
@@ -781,7 +782,7 @@ h4 {
   }
 
   .header {
-    padding: 2rem 1.6rem;
+    padding: 2rem 1rem;
   }
 
   .logo {
@@ -901,5 +902,13 @@ h4 {
 
   .footer-bottom div:last-child {
     margin: auto;
+  }
+
+  .button-password {
+    left: 28rem;
+  }
+
+  .button-password-confirm {
+    right: 20%;
   }
 }

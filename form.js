@@ -91,9 +91,11 @@ function checkForm() {
 
   if (confirmPassValue === "") {
     setError(confirmPass, "Por favor, confirme a senha.")
+  } else if (!checkPassword(confirmPassValue)) {
+    setError(confirmPassValue, "O campo senha deve conter 6 a 10 caracteres, uma letra minúscula e uma maiúscula, e pelo menos um número.")
   } else if (confirmPassValue !== passValue){
     setError(confirmPass, "As senhas não conferem")
-  } else {
+  }  else {
     setSuccess(confirmPass);
   }
 
@@ -146,7 +148,6 @@ function checkEmail(email) {
 }
 
 function checkPassword (pass) {
-  console.log(pass)
   return pass.match(/[a-z]/g) && pass.match(/[A-Z]/g) && pass.match(/[0-9]/g) && pass.length >= 6 && pass.length <= 10
 }
 
