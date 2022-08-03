@@ -529,21 +529,20 @@ h4 {
   height: 100%;
   overflow: auto;
   background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
   position: relative;
-  margin: auto;
+  margin: 1.5rem auto;
   padding: 0;
   width: 75%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
   animation-duration: 0.6s;
 }
 
-/* Animações */
 @-webkit-keyframes animatetop {
   from {
     top: -300px;
@@ -819,5 +818,21 @@ h4 {
 
   .frameworks {
     margin-top: 5rem;
+  }
+
+  .iframe {
+    min-width: 28rem;
+    height: 18rem;
+
+    margin-top: 2rem;
+  }
+
+  .modal-content {
+    margin: 15rem auto;
+  }
+
+  .frameworks-right {
+    display: flex;
+    justify-content: space-around;
   }
 }
