@@ -85,6 +85,10 @@ button {
   display: none;
 }
 
+.buttons-header {
+  margin-left: 3rem;
+}
+
 .button-highlight {
   max-width: 25rem;
   padding: 0.8rem 2.4rem;
