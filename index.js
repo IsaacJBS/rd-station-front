@@ -7,11 +7,38 @@ const pass = document.querySelector("#pass")
 const confirmPass = document.querySelector("#confirm-pass") 
 const site = document.querySelector("#site") 
 
+const messageConfirmation = document.querySelector(".success-message")
+
+const urlPost = "https://rdstation-signup-psel.herokuapp.com"
+
 form.addEventListener("submit", e => {
   e.preventDefault()
 
   checkForm()
 })
+
+async function post (body) {
+  try {
+    const requisition = await fetch(urlPost, {
+      method: 'POST',
+      headers: {
+          "Content-Type": "application/json"
+      },
+      body: JSON.stringify(body)
+  })
+  const responseApi = await requisition.json()
+
+  if (responseApi.success) {
+    form.classList.remove("form-control")
+    form.classList.add("confirm-post")
+    messageConfirmation.classList.remove("success-message")
+    messageConfirmation.classList.add("confirm-message")
+    window.scrollTo({ top: 0});
+  }
+  } catch (error) {
+    throw new Error(error)
+  }
+}
 
 function checkForm() {
   const clientNameValue = clientName.value.trim()
@@ -58,6 +85,8 @@ function checkForm() {
 
   if (confirmPassValue === "") {
     setError(confirmPass, "Por favor, confirme a senha.")
+  } else if (confirmPassValue !== passValue){
+    setError(confirmPass, "As senhas não conferem")
   } else {
     setSuccess(confirmPass);
   }
@@ -75,7 +104,15 @@ function checkForm() {
   })
 
   if (formIsValid) {
-    console.log("tudo certo até agora")
+    const body = {
+      clientName: clientNameValue,
+      email: emailValue,
+      tel: telValue,
+      occupation: occupationValue,
+      pass: passValue,
+      site: siteValue
+    }
+    post(body)
   }
 }
 
