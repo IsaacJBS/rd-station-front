@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./styles.css">
   <title>RD Station</title>
   <script src="./form.js" defer></script>
+  <script src="./video.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;700;900&family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
@@ -122,7 +123,9 @@
   </section>
 
   <section class="results container_padding">
-    <img src="./assets/images/results.jpg" alt="Mulher branca com cabelos castanhos escrevendo com um piloto em um quadro transparente">
+    <div class="results-left">
+      <img src="./assets/images/results.jpg" alt="Mulher branca com cabelos castanhos escrevendo com um piloto em um quadro transparente">
+    </div>
     <div class="results-right">
       <h2>Resultados previsíveis e mais clientes para sua empresa</h2>
       <p>Torne sua atuação no Marketing Digital mais eficaz</p>
@@ -217,11 +220,18 @@
     <div>
       <h2>Entenda melhor como o RD Station Marketing funciona na prática</h2>
 
-      <button>em assista a demonstração <img src="./assets/images/play.png" alt="Imagem de play"></button>
+      <button class="button-demonstration">assista a demonstração <img src="./assets/images/play.png" alt="Imagem de play"></button>
     </div>
 
     <div>
-      <img src="./assets/images/thumbnail.jpg" alt="">
+      <img class="thumbnail" src="./assets/images/thumbnail.jpg" alt="">
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <iframe class="iframe" src="https://www.youtube.com/embed/lGCesaaLi4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
     </div>
   </section>
 
