@@ -146,6 +146,89 @@ h4 {
   font-size: 2rem;
 }
 
+.form-container {
+  max-width: 49rem;
+  background-color: var(--background-color);
+
+  position: absolute;
+  z-index: 1;
+
+  right: 18rem;
+  margin-top: -4rem;
+
+  padding: 4rem 2.4rem;
+
+  box-shadow: 0px 4px 12px rgba(33, 36, 41, 0.14);
+  border-radius: 2px;
+}
+
+.form-container-header {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-color);
+
+  margin-bottom: 2.4rem;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 2rem;
+}
+
+.form-control label {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+
+  margin-bottom: 0.8rem;
+}
+
+.form-control input,
+.form-control select {
+  border: 2px solid #000000;
+  box-shadow: inset 6px 6px 0px #eefbfb;
+
+  padding: 1rem 1.2rem;
+}
+
+.privacy-terms li {
+  color: #7e8a98;
+  font-weight: 400;
+  font-size: 1.2rem;
+
+  margin-left: -2.5rem;
+}
+
+.link {
+  color: var(--emphasis-text-blue);
+  text-decoration: underline;
+}
+
+.button-form {
+  width: 90%;
+  text-align: center;
+  padding: 0.8rem 2.4rem;
+
+  color: var(--main-text-color);
+
+  align-self: center;
+  background-color: var(--yellow-button);
+}
+
+.form-container h3 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 2.4rem;
+}
+
+.form-container p {
+  text-align: center;
+  font-size: 1.4rem;
+
+  color: var(--alternative-text-color);
+}
+
 .hero_footer {
   color: var(--color-white);
 
@@ -180,7 +263,14 @@ h4 {
   display: flex;
   justify-content: space-between;
 
+  flex-wrap: wrap;
+
   background: linear-gradient(-140deg, #f1f3f5 65%, #fff 40%);
+}
+
+.results img {
+  max-width: 60rem;
+  max-height: 60rem;
 }
 
 .results h2 {
@@ -196,7 +286,7 @@ h4 {
 }
 
 .results-right {
-  width: 49rem;
+  max-width: 49rem;
 }
 
 .results-items {
