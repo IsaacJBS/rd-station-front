@@ -9,6 +9,7 @@
   <title>RD Station</title>
   <script src="./form.js" defer></script>
   <script src="./video.js" defer></script>
+  <script src="./index.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;700;900&family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
@@ -17,17 +18,28 @@
 <body>
 
   <header class="header">
-    <img class="logo" src="./assets/svg/logo.svg" alt="Logo da RD Station">
-    <nav class="header_nav">
-      <a>Menu 1</a>
-      <a>Menu 2</a>
-      <a>Menu 3</a>
-      <a>Menu 4</a>
-      <a>Menu 5</a>
-      <div class="header_buttons">
-        <button class="button-secondary">BUTTON</button>
-        <button class="button-primary">BUTTON 🠖</button>
-      </div>
+    <a id="logo" href="#">
+      <img class="logo" src="./assets/svg/logo.svg" alt="Logo da RD Station">
+    </a>
+    <nav id="nav">
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+        <span id="hamburger"></span>
+      </button>
+      <ul id="menu" role="menu">
+        <li><a href="/">Menu 1</a></li>
+        <li><a href="/">Menu 2</a></li>
+        <li><a href="/">Menu 3</a></li>
+        <li><a href="/">Menu 4</a></li>
+        <li>
+          <a href="/">Menu 5</a>
+        </li>
+        <li>
+          <div class="buttons-header">
+            <button class="button-secondary">BUTTON</button>
+            <button class="button-primary">BUTTON 🠖</button>
+          </div>
+        </li>
+      </ul>
     </nav>
   </header>
 
@@ -239,6 +251,7 @@
     <div>
       <h2>Torne sua operação de Marketing ainda mais poderosa</h2>
       <p>O RD Station Marketing se conecta as principais ferramentas nacionais e internacionais</p>
+      <div></div>
       <a href="https://app.rdstation.com.br/signup" target="__blank">
         <button class="button-primary">criar conta gratuita</button>
       </a>

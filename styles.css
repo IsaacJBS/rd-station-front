@@ -38,6 +38,36 @@ a {
   cursor: pointer;
 }
 
+#logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e7e7e7;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+}
+
+#btn-mobile {
+  display: none;
+}
+
 button {
   all: unset;
 
@@ -49,6 +79,10 @@ button {
 
   letter-spacing: 0.04em;
   text-transform: uppercase;
+}
+
+#btn-mobile {
+  display: none;
 }
 
 .button-highlight {
@@ -381,7 +415,7 @@ h4 {
 
 .features-card {
   max-width: 39rem;
-  height: 39rem;
+  min-height: 39rem;
 
   background: var(--background-color);
 
@@ -453,7 +487,6 @@ h4 {
   max-width: 90vw;
 
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   gap: 2rem;
 
@@ -489,19 +522,17 @@ h4 {
 .modal {
   display: none;
   position: fixed;
-  z-index: 2; /* Define que o pop-up deverá ficar sobre outros elementos */
+  z-index: 2;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto; /* Habilita o scroll */
+  overflow: auto;
   background-color: rgb(0, 0, 0);
 }
 
-/* Modal Content */
 .modal-content {
   position: relative;
-  /*background-color: #fefefe;*/
   margin: auto;
   padding: 0;
   width: 75%;
@@ -535,7 +566,6 @@ h4 {
   }
 }
 
-/* Botão Fechar */
 .close {
   color: white;
   float: right;
@@ -572,7 +602,7 @@ h4 {
   font-family: "Nunito Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .frameworks button {
@@ -639,6 +669,79 @@ h4 {
 /* Responsividade */
 
 @media (max-width: 682px) {
+  .buttons-header {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 57px;
+    right: 0px;
+    background: var(--background-color);
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+    color: var(--emphasis-text-blue);
+  }
+
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+
+  #hamburger::after,
+  #hamburger::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
   .header {
     padding: 2rem 1.6rem;
   }
@@ -646,6 +749,10 @@ h4 {
   .logo {
     width: 13rem;
     height: 2.5rem;
+  }
+
+  .button-form {
+    width: 85%;
   }
 
   .hero_section-left h1 {
@@ -668,7 +775,7 @@ h4 {
     position: inherit;
     margin-top: 1rem;
 
-    width: 32.3rem;
+    max-width: 36.3rem;
 
     padding: 1rem;
   }
@@ -697,8 +804,20 @@ h4 {
     font-size: 3.2rem;
   }
 
+  .create-account-items button {
+    margin-bottom: 3rem;
+  }
+
   .thumbnail {
     width: 32rem;
     margin-bottom: 4rem;
+  }
+
+  .demonstration {
+    flex-wrap: wrap;
+  }
+
+  .frameworks {
+    margin-top: 5rem;
   }
 }
