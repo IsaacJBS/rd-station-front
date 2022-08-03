@@ -850,4 +850,21 @@ h4 {
     flex-direction: column;
     align-items: center;
   }
+
+  .footer {
+    padding: 4rem 1.6rem;
+    align-items: center;
+  }
+
+  .footer-top {
+    align-items: center;
+  }
+
+  .footer-bottom div:first-child {
+    display: none;
+  }
+
+  .footer-bottom div:last-child {
+    margin: auto;
+  }
 }
