@@ -50,6 +50,8 @@ function checkForm() {
 
   if (passValue === "") {
     setError(pass, "O campo senha é obrigatório.")
+  } else if (!checkPassword(passValue)) {
+    setError(pass, "O campo senha deve conter 6 a 10 caracteres, uma letra minúscula e uma maiúscula, e pelo menos um número.")
   } else {
     setSuccess(pass);
   }
@@ -96,4 +98,9 @@ function checkEmail(email) {
   return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
     email
   );
+}
+
+function checkPassword (pass) {
+  console.log(pass)
+  return pass.match(/[a-z]/g) && pass.match(/[A-Z]/g) && pass.match(/[0-9]/g) && pass.length >= 6 && pass.length <= 10
 }
