@@ -414,8 +414,8 @@ h4 {
 }
 
 .features-card {
-  max-width: 39rem;
-  min-height: 39rem;
+  max-width: 32rem;
+  min-height: 32rem;
 
   background: var(--background-color);
 
