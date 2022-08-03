@@ -16,6 +16,8 @@ html {
   --color-white: #fff;
   --color-grey: #f1f3f5;
   --border-blue: #78edf2;
+  --background-button-secondary-hover: #d6d6d6;
+  --background-button-highligh-hover: #f4ca6d;
 }
 
 body {
@@ -49,7 +51,7 @@ button {
   text-transform: uppercase;
 }
 
-.button-yellow {
+.button-highlight {
   max-width: 25rem;
   padding: 0.8rem 2.4rem;
 
@@ -59,19 +61,32 @@ button {
   background-color: var(--yellow-button);
 }
 
-.button-white {
+.button-highlight:hover {
+  background-color: var(--background-button-highligh-hover);
+}
+
+.button-secondary {
   padding: 0.8rem 1.6rem;
 
   outline: 2px solid var(--main-text-color);
 }
 
-.button-blue {
+.button-secondary:hover {
+  background-color: var(--background-button-secondary-hover);
+}
+
+.button-primary {
   padding: 0.8rem 1.6rem;
 
   background-color: var(--footer-background-color);
   outline: 2px solid var(--footer-background-color);
 
   margin-left: 1.6rem;
+}
+
+.button-primary:hover {
+  background-color: var(--alternative-color);
+  outline: 2px solid var(--alternative-color);
 }
 
 h1,
@@ -214,6 +229,10 @@ h4 {
 
   align-self: center;
   background-color: var(--yellow-button);
+}
+
+.button-form:hover {
+  background-color: var(--background-button-highligh-hover);
 }
 
 .form-container h3 {
