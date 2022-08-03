@@ -11,6 +11,12 @@ const messageConfirmation = document.querySelector(".success-message")
 
 const urlPost = "https://rdstation-signup-psel.herokuapp.com"
 
+tel.addEventListener('input', handleInput, false)
+
+function handleInput (e) {
+  e.target.value = phoneMask(e.target.value)
+}
+
 form.addEventListener("submit", e => {
   e.preventDefault()
 
@@ -146,4 +152,13 @@ function checkPassword (pass) {
 
 function checkUrl (url) {
   return url.match(/(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/)
+}
+
+
+function phoneMask (phone) {
+  return phone.replace(/\D/g, '')
+    .replace(/^(\d)/, '($1')
+    .replace(/^(\(\d{2})(\d)/, '$1) $2')
+    .replace(/(\d{5})(\d{1,5})/, '$1-$2')
+    .replace(/(-\d{4})\d+?$/, '$1');
 }
