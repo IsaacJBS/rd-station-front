@@ -50,7 +50,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #e7e7e7;
+  background: var(--background-color);
 }
 
 #menu {
@@ -591,8 +591,11 @@ h4 {
   align-items: flex-start;
 }
 
+.frameworks div:first-child {
+  max-width: 50rem;
+}
+
 .frameworks h2 {
-  font-family: "Darker Grotesque";
   font-weight: 900;
   font-size: 4rem;
 }
@@ -624,6 +627,7 @@ h4 {
 }
 
 .frameworks-right-item {
+  width: 8rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -834,5 +838,16 @@ h4 {
   .frameworks-right {
     display: flex;
     justify-content: space-around;
+  }
+
+  .frameworks-right-item {
+    width: 10rem;
+  }
+
+  .frameworks div:first-child {
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
