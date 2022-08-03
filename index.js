@@ -93,6 +93,8 @@ function checkForm() {
 
   if (siteValue === "") {
     setError(site, "O campo site é obrigatório.")
+  } else if (!checkUrl(siteValue)) {
+    setError(site, "Por favor, insira uma url válida")
   } else {
     setSuccess(site);
   }
@@ -140,4 +142,8 @@ function checkEmail(email) {
 function checkPassword (pass) {
   console.log(pass)
   return pass.match(/[a-z]/g) && pass.match(/[A-Z]/g) && pass.match(/[0-9]/g) && pass.length >= 6 && pass.length <= 10
+}
+
+function checkUrl (url) {
+  return url.match(/(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/)
 }
