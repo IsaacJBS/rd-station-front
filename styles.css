@@ -229,6 +229,36 @@ h4 {
   margin-bottom: 2rem;
 }
 
+.button-password {
+  position: relative;
+  background-image: url(./assets/svg/eye.svg);
+  background-repeat: no-repeat;
+  top: -2.5rem;
+  left: 45rem;
+}
+
+.button-password-hidden {
+  background-image: url(./assets/svg/closed-eye.svg);
+  background-repeat: no-repeat;
+}
+
+.button-password-confirm {
+  position: relative;
+  background-image: url(./assets/svg/eye.svg);
+  background-repeat: no-repeat;
+  top: -2.5rem;
+  left: 45rem;
+}
+
+.button-password-confirm-hidden {
+  background-image: url(./assets/svg/closed-eye.svg);
+  background-repeat: no-repeat;
+}
+
+.show-password {
+  width: 2rem;
+}
+
 .form-control.success input {
   border-color: #2ecc71;
 }
