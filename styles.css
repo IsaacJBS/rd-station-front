@@ -222,6 +222,7 @@ h4 {
 
 .confirm-message {
   display: block;
+  text-align: center;
 }
 
 .form-control input,
