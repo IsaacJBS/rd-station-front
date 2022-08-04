@@ -14,6 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;700;900&family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/desktop.css">
   <link rel="stylesheet" href="./styles/mobile.css">
+  <link rel="stylesheet" href="./styles/dropdown.css">
 </head>
 
 <body>
@@ -26,9 +27,36 @@
       <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
         <span id="hamburger"></span>
       </button>
-      <ul id="menu" role="menu">
+      <ul id="menu" role="menu" class="dropdown-menu">
         <li><a href="/">Menu 1</a></li>
-        <li><a href="/">Menu 2</a></li>
+        <li>
+          <a class="dropdown-item" href="/">Menu 2 &#9660;</a>
+          <ul class="dropdown-submenu">
+            <div>
+              <div>
+                <h2>Metodologia</h2>
+              </div>
+              <a href="/">Tudo sobre inbound Marketing</a>
+            </div>
+            <div>
+              <div>
+                <h2>Cursos</h2>
+              </div>
+              <a href="/">RD University</a>
+              <a href="/">Introdução ao Inbound Marketing</a>
+              <a href="/">RD Station Marketing Basic</a>
+            </div>
+            <div>
+              <div>
+                <h2>Ferramentas</h2>
+              </div>
+              <a href="/">Avalie seu funil de vendas</a>
+              <a href="/">Compare suas métricas de Email Marketing</a>
+              <a href="/">Calcule o ROI do RD Station Marketing</a>
+            </div>
+
+          </ul>
+        </li>
         <li><a href="/">Menu 3</a></li>
         <li><a href="/">Menu 4</a></li>
         <li>

@@ -1,0 +1,52 @@
+.dropdown-menu li:hover > .dropdown-submenu {
+  display: flex;
+  gap: 10rem;
+}
+
+.dropdown-submenu {
+  min-width: 40rem;
+  height: 20rem;
+
+  padding: 2.4rem;
+  background-color: #fff;
+  position: absolute;
+  margin-top: 1rem;
+  display: none;
+  z-index: 3;
+  margin-left: -40rem;
+
+  box-shadow: 0px 8px 18px rgba(33, 36, 41, 0.16);
+  border-radius: 2px;
+}
+
+.dropdown-submenu div {
+  min-width: 19rem;
+
+  text-align: left;
+}
+
+.dropdown-submenu p {
+  margin-left: -2rem;
+}
+
+.dropdown-submenu h2 {
+  font-family: "Darker Grotesque";
+  padding: 2rem 0;
+  border-bottom: 1px solid #cfd3d8;
+  font-size: 1.8rem;
+  line-height: 110%;
+
+  text-transform: uppercase;
+
+  color: #19c1ce;
+}
+
+.dropdown-submenu a {
+  background-color: #fff;
+  width: 150%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+  font-size: 1.4rem;
+  border-left: 8px solid transparent;
+}

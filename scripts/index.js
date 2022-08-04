@@ -46,3 +46,4 @@ function showConfirmPass () {
     confirmPasswordBtn.classList.remove("button-password-confirm-hidden")
   }
 }
+
