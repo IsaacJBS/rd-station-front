@@ -3,6 +3,10 @@
   gap: 10rem;
 }
 
+.dropdown-menu li {
+  padding-bottom: 0.8rem;
+}
+
 .dropdown-submenu {
   min-width: 40rem;
   height: 20rem;
