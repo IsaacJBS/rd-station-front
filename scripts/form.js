@@ -9,6 +9,8 @@ const site = document.querySelector("#site")
 
 const messageConfirmation = document.querySelector(".success-message")
 
+const loader = document.querySelector(".loader")
+
 const urlPost = "https://rdstation-signup-psel.herokuapp.com"
 
 tel.addEventListener('input', handleInput, false)
@@ -23,8 +25,9 @@ form.addEventListener("submit", e => {
   checkForm()
 })
 
-async function post (body) {
+async function postFetch (body) {
   try {
+    loader.classList.add("loader-show")
     const requisition = await fetch(urlPost, {
       method: 'POST',
       headers: {
@@ -43,6 +46,8 @@ async function post (body) {
   }
   } catch (error) {
     throw new Error(error)
+  } finally {
+    loader.classList.remove("loader-show")
   }
 }
 
@@ -120,7 +125,7 @@ function checkForm() {
       pass: passValue,
       site: siteValue
     }
-    post(body)
+    postFetch(body)
   }
 }
 
